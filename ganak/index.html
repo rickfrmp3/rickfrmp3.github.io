@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>GANAK</title>
+</head>
+
+<body style="background:black;color:white;display:flex;justify-content:center;align-items:center;height:100vh;font-family:monospace;">
+
+<div style="text-align:center;">
+    <p>INSIRA A CHAVE</p>
+
+    <input id="senha" style="padding:10px;background:black;color:white;border:1px solid white;">
+
+    <br><br>
+
+    <button onclick="verificar()" style="padding:10px;background:black;color:white;border:1px solid white;">
+        ENTRAR
+    </button>
+</div>
+
+<script>
+function verificar() {
+    const senha = document.getElementById("senha").value.toLowerCase();
+
+    if (senha === "fase1") {
+        window.location.href = "/fase1";
+    } else {
+        alert("ERRADO");
+    }
+}
+</script>
+
+</body>
+</html>
