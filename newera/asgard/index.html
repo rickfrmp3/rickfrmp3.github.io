@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.H.I.E.L.D. — Arquivo Médico</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(35, 45, 55, 0.45), transparent 45%),
+                #080b0e;
+            color: #b8c0c5;
+            font-family: "Courier New", Courier, monospace;
+            padding: 40px 20px;
+        }
+
+        .terminal {
+            width: min(900px, 100%);
+            margin: 0 auto;
+            border: 1px solid #303940;
+            background: rgba(9, 12, 15, 0.96);
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.7);
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 18px;
+            border-bottom: 1px solid #303940;
+            background: #0d1115;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #69757d;
+        }
+
+        .status {
+            color: #9da7ad;
+        }
+
+        .content {
+            padding: 42px clamp(22px, 6vw, 65px) 55px;
+        }
+
+        .classification {
+            text-align: center;
+            color: #6f7a81;
+            font-size: 11px;
+            letter-spacing: 3px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: clamp(24px, 4vw, 38px);
+            font-weight: normal;
+            letter-spacing: 5px;
+            color: #d1d7da;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin: 10px 0 42px;
+            color: #68737a;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .section {
+            margin-top: 34px;
+        }
+
+        .section-title {
+            display: inline-block;
+            color: #c3cbd0;
+            border-bottom: 1px solid #4a545b;
+            padding-bottom: 5px;
+            margin-bottom: 17px;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            margin: 0 0 15px;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .metadata {
+            border: 1px solid #293138;
+            background: #0b0f12;
+            padding: 20px;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+        .metadata span {
+            color: #737e85;
+        }
+
+        .redacted {
+            color: #080b0e;
+            background: #777;
+            padding: 0 4px;
+            user-select: none;
+        }
+
+        .warning {
+            margin-top: 38px;
+            padding: 16px 18px;
+            border-left: 2px solid #6b7074;
+            background: rgba(255,255,255,0.025);
+            color: #8d979d;
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        .final {
+            margin-top: 45px;
+            padding-top: 28px;
+            border-top: 1px solid #303940;
+            text-align: center;
+        }
+
+        .final p {
+            color: #7f8a90;
+            font-size: 13px;
+        }
+
+        .blank {
+            display: inline-block;
+            color: #101417;
+            background: #858b8f;
+            padding: 4px 10px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        .footer {
+            margin-top: 45px;
+            text-align: center;
+            color: #454f55;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            .content {
+                padding: 30px 20px 40px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            .metadata {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <div class="topbar">
+        <span>S.H.I.E.L.D. // MEDICAL ARCHIVE</span>
+        <span class="status">● SYSTEM ONLINE</span>
+    </div>
+
+    <main class="content">
+
+        <div class="classification">
+            CLASSIFICAÇÃO — NÍVEL 6 // ACESSO RESTRITO
+        </div>
+
+        <h1>ARQUIVO MÉDICO</h1>
+
+        <div class="subtitle">
+            S.H.I.E.L.D. MEDICAL DIVISION
+        </div>
+
+        <div class="metadata">
+
+            <div>
+                <span>ARQUIVO MÉDICO:</span> X-23
+            </div>
+
+            <div>
+                <span>IDENTIFICAÇÃO:</span>
+                <span class="redacted">████████████</span>
+            </div>
+
+            <div>
+                <span>STATUS:</span> DESCONHECIDO
+            </div>
+
+            <div>
+                <span>NÍVEL DE AMEAÇA:</span> ALTO
+            </div>
+
+        </div>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                DESCRIÇÃO DA AMOSTRA
+            </div>
+
+            <p>
+                A amostra genética analisada pertence a um indivíduo humanoide
+                do sexo masculino, aproximadamente 1,88 m de altura, com massa
+                corporal estimada em 136 kg.
+            </p>
+
+            <p>
+                A estrutura óssea apresenta uma densidade consideravelmente
+                superior à de um ser humano comum.
+            </p>
+
+            <p>
+                Exames revelaram a presença de três estruturas ósseas retráteis
+                em cada membro superior.
+            </p>
+
+            <p>
+                A composição exata dessas estruturas permanece desconhecida.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                ANÁLISE GENÉTICA
+            </div>
+
+            <p>
+                Amostras coletadas apresentam uma capacidade de regeneração
+                celular extremamente elevada.
+            </p>
+
+            <p>
+                Ferimentos que normalmente resultariam em incapacidade
+                permanente demonstraram recuperação em períodos incompatíveis
+                com a fisiologia humana.
+            </p>
+
+            <p>
+                O processo regenerativo também parece impedir o acúmulo de
+                danos celulares associados ao envelhecimento convencional.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                OBSERVAÇÕES
+            </div>
+
+            <p>
+                O paciente apresenta múltiplas cicatrizes distribuídas pelo corpo.
+            </p>
+
+            <p>
+                Algumas correspondem a ferimentos recentes. Outras parecem ter
+                décadas de idade.
+            </p>
+
+            <p>
+                A origem de determinadas cicatrizes não pôde ser determinada.
+            </p>
+
+            <p>
+                Exames neurológicos também identificaram alterações compatíveis
+                com exposição prolongada a traumas físicos e psicológicos.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                ESTRUTURA ÓSSEA
+            </div>
+
+            <p>
+                As estruturas presentes nos membros superiores não são implantes
+                convencionais.
+            </p>
+
+            <p>
+                A análise sugere que foram incorporadas ao próprio organismo
+                do indivíduo.
+            </p>
+
+            <p>
+                O material apresenta resistência extremamente elevada e não
+                corresponde a nenhuma liga metálica conhecida nos bancos de
+                dados da S.H.I.E.L.D.
+            </p>
+
+            <p>
+                O procedimento responsável pela alteração permanece desconhecido.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                HISTÓRICO
+            </div>
+
+            <p>
+                O indivíduo possui registros fragmentados em diferentes períodos
+                da história moderna.
+            </p>
+
+            <p>
+                Diversos documentos apresentam nomes diferentes para o mesmo
+                paciente.
+            </p>
+
+            <p>
+                Nenhum deles pôde ser confirmado como identidade verdadeira.
+            </p>
+
+            <p>
+                Um dos nomes aparece com frequência suficiente para receber
+                atenção especial:
+            </p>
+
+            <p style="text-align: center; margin-top: 25px;">
+                <span class="redacted">
+                    ████████
+                </span>
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                NOTA DO PESQUISADOR
+            </div>
+
+            <p>
+                A compatibilidade genética entre esta amostra e um indivíduo
+                previamente catalogado é de <strong>99,7%</strong>.
+            </p>
+
+            <p>
+                A relação entre os dois indivíduos ainda está sendo investigada.
+            </p>
+
+            <p>
+                Entretanto, os dados indicam que esta pessoa não deveria possuir
+                a mesma capacidade regenerativa.
+            </p>
+
+        </section>
+
+
+        <div class="warning">
+
+            NOTA DO SISTEMA:
+            A identidade permanece oficialmente desconhecida.
+            O acesso aos arquivos relacionados foi limitado após a descoberta
+            de inconsistências nos registros históricos.
+
+        </div>
+
+
+        <div class="final">
+
+            <p>
+                O indivíduo era conhecido como:
+            </p>
+
+            <div class="blank">
+                ████████████████████
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            S.H.I.E.L.D. // MEDICAL ARCHIVE // X-23 // FIM DO DOCUMENTO
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
