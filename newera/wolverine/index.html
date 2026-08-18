@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu nome era...</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(35, 45, 55, 0.45), transparent 45%),
+                #080b0e;
+            color: #b8c0c5;
+            font-family: "Courier New", Courier, monospace;
+            padding: 40px 20px;
+        }
+
+        .terminal {
+            width: min(900px, 100%);
+            margin: 0 auto;
+            border: 1px solid #303940;
+            background: rgba(9, 12, 15, 0.96);
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.7);
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 18px;
+            border-bottom: 1px solid #303940;
+            background: #0d1115;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #69757d;
+        }
+
+        .status {
+            color: #9da7ad;
+        }
+
+        .content {
+            padding: 42px clamp(22px, 6vw, 65px) 55px;
+        }
+
+        .classification {
+            text-align: center;
+            color: #6f7a81;
+            font-size: 11px;
+            letter-spacing: 3px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: clamp(24px, 4vw, 38px);
+            font-weight: normal;
+            letter-spacing: 5px;
+            color: #d1d7da;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin: 10px 0 42px;
+            color: #68737a;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .section {
+            margin-top: 34px;
+        }
+
+        .section-title {
+            display: inline-block;
+            color: #c3cbd0;
+            border-bottom: 1px solid #4a545b;
+            padding-bottom: 5px;
+            margin-bottom: 17px;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            margin: 0 0 15px;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .metadata {
+            border: 1px solid #293138;
+            background: #0b0f12;
+            padding: 20px;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+        .metadata span {
+            color: #737e85;
+        }
+
+        .redacted {
+            color: #080b0e;
+            background: #777;
+            padding: 0 4px;
+            user-select: none;
+        }
+
+        .warning {
+            margin-top: 38px;
+            padding: 16px 18px;
+            border-left: 2px solid #6b7074;
+            background: rgba(255,255,255,0.025);
+            color: #8d979d;
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        .final {
+            margin-top: 45px;
+            padding-top: 28px;
+            border-top: 1px solid #303940;
+            text-align: center;
+        }
+
+        .final p {
+            color: #7f8a90;
+            font-size: 13px;
+        }
+
+        .blank {
+            display: inline-block;
+            color: #101417;
+            background: #858b8f;
+            padding: 4px 10px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        .footer {
+            margin-top: 45px;
+            text-align: center;
+            color: #454f55;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            .content {
+                padding: 30px 20px 40px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            .metadata {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <div class="topbar">
+        <span>S.H.I.E.L.D. // RECOVERY ARCHIVE</span>
+        <span class="status">● SYSTEM ONLINE</span>
+    </div>
+
+    <main class="content">
+
+        <div class="classification">
+            CLASSIFICAÇÃO — NÍVEL 7 // ACESSO RESTRITO
+        </div>
+
+        <h1>ARQUIVO DE RECUPERAÇÃO</h1>
+
+        <div class="subtitle">
+            S.H.I.E.L.D. INTELLIGENCE DIVISION
+        </div>
+
+        <div class="metadata">
+
+            <div>
+                <span>ARQUIVO:</span> SR-1945
+            </div>
+
+            <div>
+                <span>IDENTIFICAÇÃO:</span>
+                <span class="redacted">████████████</span>
+            </div>
+
+            <div>
+                <span>STATUS:</span> RECUPERADO
+            </div>
+
+            <div>
+                <span>DATA DO INCIDENTE:</span> 1945
+            </div>
+
+            <div>
+                <span>LOCAL:</span>
+                <span class="redacted">████████████████</span>
+            </div>
+
+        </div>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                DESCOBERTA
+            </div>
+
+            <p>
+                Durante uma operação de recuperação realizada em território
+                ártico, uma aeronave militar parcialmente destruída foi
+                localizada sob uma extensa camada de gelo.
+            </p>
+
+            <p>
+                A aeronave apresentava características compatíveis com modelos
+                utilizados pelas forças aliadas durante a Segunda Guerra Mundial.
+            </p>
+
+            <p>
+                Não foram encontrados sobreviventes no interior da aeronave.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                INDIVÍDUO RECUPERADO
+            </div>
+
+            <p>
+                Um corpo humano foi encontrado preservado dentro da estrutura
+                congelada da aeronave.
+            </p>
+
+            <p>
+                Apesar da idade estimada dos restos materiais encontrados no
+                local, o indivíduo não apresenta sinais de decomposição
+                compatíveis com o período transcorrido.
+            </p>
+
+            <p>
+                A temperatura corporal encontrava-se extremamente abaixo dos
+                níveis considerados compatíveis com a sobrevivência humana.
+            </p>
+
+            <p>
+                Entretanto, os exames iniciais indicaram atividade biológica
+                residual.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                EQUIPAMENTO ENCONTRADO
+            </div>
+
+            <p>
+                Um objeto circular foi localizado próximo ao indivíduo.
+            </p>
+
+            <p>
+                O objeto apresenta composição metálica incomum e sinais de
+                impacto severo.
+            </p>
+
+            <p>
+                Marcas presentes na superfície sugerem que o equipamento foi
+                utilizado em combate.
+            </p>
+
+            <p>
+                Símbolos parcialmente danificados foram identificados na parte
+                central do objeto.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                DOCUMENTAÇÃO RECUPERADA
+            </div>
+
+            <p>
+                Fragmentos de documentos militares foram encontrados dentro
+                da aeronave.
+            </p>
+
+            <p>
+                A maior parte das informações tornou-se ilegível devido à
+                exposição prolongada ao gelo e à água.
+            </p>
+
+            <p>
+                Entretanto, uma patente militar permaneceu parcialmente
+                identificável.
+            </p>
+
+            <p>
+                O documento fazia referência a um soldado envolvido em
+                operações especiais durante a Segunda Guerra Mundial.
+            </p>
+
+            <p style="text-align: center; margin-top: 25px;">
+                <span class="redacted">
+                    █████████████████
+                </span>
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                ANÁLISE HISTÓRICA
+            </div>
+
+            <p>
+                Registros militares indicam que uma aeronave desapareceu durante
+                uma operação realizada no final da Segunda Guerra Mundial.
+            </p>
+
+            <p>
+                A missão envolvia uma unidade especial utilizada em operações
+                contra forças da HYDRA.
+            </p>
+
+            <p>
+                O piloto não foi localizado e todos os indivíduos envolvidos
+                foram posteriormente considerados mortos ou desaparecidos.
+            </p>
+
+            <p>
+                Um dos soldados presentes na missão recebeu posteriormente o
+                status de desaparecido em combate.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                OBSERVAÇÃO DO PESQUISADOR
+            </div>
+
+            <p>
+                A idade biológica do indivíduo não corresponde à idade que
+                deveria possuir caso os registros históricos estejam corretos.
+            </p>
+
+            <p>
+                Exames preliminares indicam que o organismo permaneceu em um
+                estado de suspensão durante grande parte do período em que
+                esteve congelado.
+            </p>
+
+            <p>
+                A possibilidade de sobrevivência após várias décadas permanece
+                sem explicação científica.
+            </p>
+
+        </section>
+
+
+        <div class="warning">
+
+            NOTA DO SISTEMA:
+            O arquivo original foi parcialmente corrompido durante a migração
+            dos registros históricos da S.H.I.E.L.D.
+            A identificação nominal do indivíduo permanece indisponível.
+
+        </div>
+
+
+        <div class="final">
+
+            <p>
+                O indivíduo era conhecido como:
+            </p>
+
+            <div class="blank">
+                ████████████████████
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            S.H.I.E.L.D. // RECOVERY ARCHIVE // SR-1945 // FIM DO DOCUMENTO
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
