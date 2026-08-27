@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.H.I.E.L.D. — Arquivo de Investigação</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(35, 45, 55, 0.45), transparent 45%),
+                #080b0e;
+            color: #b8c0c5;
+            font-family: "Courier New", Courier, monospace;
+            padding: 40px 20px;
+        }
+
+        .terminal {
+            width: min(900px, 100%);
+            margin: 0 auto;
+            border: 1px solid #303940;
+            background: rgba(9, 12, 15, 0.96);
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.7);
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 18px;
+            border-bottom: 1px solid #303940;
+            background: #0d1115;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #69757d;
+        }
+
+        .status {
+            color: #9da7ad;
+        }
+
+        .content {
+            padding: 42px clamp(22px, 6vw, 65px) 55px;
+        }
+
+        .classification {
+            text-align: center;
+            color: #6f7a81;
+            font-size: 11px;
+            letter-spacing: 3px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+            font-size: clamp(24px, 4vw, 38px);
+            font-weight: normal;
+            letter-spacing: 5px;
+            color: #d1d7da;
+        }
+
+        .subtitle {
+            text-align: center;
+            margin: 10px 0 42px;
+            color: #68737a;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .section {
+            margin-top: 34px;
+        }
+
+        .section-title {
+            display: inline-block;
+            color: #c3cbd0;
+            border-bottom: 1px solid #4a545b;
+            padding-bottom: 5px;
+            margin-bottom: 17px;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+
+        p {
+            margin: 0 0 15px;
+            line-height: 1.8;
+            font-size: 14px;
+        }
+
+        .metadata {
+            border: 1px solid #293138;
+            background: #0b0f12;
+            padding: 20px;
+            font-size: 13px;
+            line-height: 1.9;
+        }
+
+        .metadata span {
+            color: #737e85;
+        }
+
+        .redacted {
+            color: #080b0e;
+            background: #777;
+            padding: 0 4px;
+            user-select: none;
+        }
+
+        .warning {
+            margin-top: 38px;
+            padding: 16px 18px;
+            border-left: 2px solid #6b7074;
+            background: rgba(255,255,255,0.025);
+            color: #8d979d;
+            font-size: 12px;
+            line-height: 1.7;
+        }
+
+        .final {
+            margin-top: 45px;
+            padding-top: 28px;
+            border-top: 1px solid #303940;
+            text-align: center;
+        }
+
+        .final p {
+            color: #7f8a90;
+            font-size: 13px;
+        }
+
+        .blank {
+            display: inline-block;
+            color: #101417;
+            background: #858b8f;
+            padding: 4px 10px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        .footer {
+            margin-top: 45px;
+            text-align: center;
+            color: #454f55;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            .content {
+                padding: 30px 20px 40px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            .metadata {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <div class="topbar">
+        <span>S.H.I.E.L.D. // INTELLIGENCE ARCHIVE</span>
+        <span class="status">● SYSTEM ONLINE</span>
+    </div>
+
+    <main class="content">
+
+        <div class="classification">
+            CLASSIFICAÇÃO — NÍVEL 7 // ACESSO RESTRITO
+        </div>
+
+        <h1>ARQUIVO DE INVESTIGAÇÃO</h1>
+
+        <div class="subtitle">
+            S.H.I.E.L.D. INTELLIGENCE DIVISION
+        </div>
+
+        <div class="metadata">
+
+            <div>
+                <span>ARQUIVO:</span> B-1945
+            </div>
+
+            <div>
+                <span>INDIVÍDUO:</span>
+                <span class="redacted">██████████████</span>
+            </div>
+
+            <div>
+                <span>STATUS HISTÓRICO:</span> MORTO EM COMBATE
+            </div>
+
+            <div>
+                <span>STATUS ATUAL:</span> POSSIVELMENTE ATIVO
+            </div>
+
+            <div>
+                <span>ORIGEM DOS NOVOS REGISTROS:</span> UNIÃO SOVIÉTICA
+            </div>
+
+        </div>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                REGISTRO ORIGINAL
+            </div>
+
+            <p>
+                O indivíduo foi integrante de uma unidade especial das forças
+                aliadas durante a Segunda Guerra Mundial.
+            </p>
+
+            <p>
+                Registros militares descrevem o soldado como um combatente
+                altamente treinado e responsável por operações de infiltração
+                atrás das linhas inimigas.
+            </p>
+
+            <p>
+                Durante uma missão realizada em 1945, o indivíduo desapareceu
+                após uma queda de grande altitude.
+            </p>
+
+            <p>
+                Apesar das buscas realizadas posteriormente, nenhum corpo foi
+                recuperado.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                IDENTIDADE
+            </div>
+
+            <p>
+                Documentos militares recuperados indicam que o indivíduo
+                possuía o nome completo:
+            </p>
+
+            <p style="text-align: center; margin-top: 25px;">
+                <strong>JAMES BUCHANAN BARNES</strong>
+            </p>
+
+            <p>
+                O soldado foi oficialmente declarado morto em combate após o
+                encerramento das operações.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                NOVOS REGISTROS
+            </div>
+
+            <p>
+                Décadas após o desaparecimento, a S.H.I.E.L.D. identificou
+                registros de operações clandestinas realizadas em território
+                soviético.
+            </p>
+
+            <p>
+                Diversos documentos descrevem um indivíduo masculino submetido
+                a procedimentos de aprimoramento físico e condicionamento
+                psicológico.
+            </p>
+
+            <p>
+                O indivíduo apresenta características compatíveis com um
+                programa experimental de super-soldados desenvolvido durante
+                a Guerra Fria.
+            </p>
+
+            <p>
+                Entre os registros encontrados existe uma referência recorrente
+                a um soldado conhecido apenas como:
+            </p>
+
+            <p style="text-align: center; margin-top: 25px;">
+                <span class="redacted">
+                    █████████
+                </span>
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                CARACTERÍSTICAS OPERACIONAIS
+            </div>
+
+            <p>
+                O indivíduo demonstrou força e resistência muito superiores às
+                capacidades humanas convencionais.
+            </p>
+
+            <p>
+                Registros de campo também indicam treinamento avançado em
+                combate corpo a corpo, infiltração e utilização de armas de
+                fogo.
+            </p>
+
+            <p>
+                A mão esquerda do indivíduo não apresenta características
+                biológicas normais.
+            </p>
+
+            <p>
+                Análises fotográficas sugerem a presença de uma prótese
+                metálica de alta resistência.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                CONEXÃO HISTÓRICA
+            </div>
+
+            <p>
+                Uma fotografia recuperada de arquivos militares antigos mostra
+                James Buchanan Barnes ao lado de um soldado posteriormente
+                identificado como Steve Rogers.
+            </p>
+
+            <p>
+                A fotografia foi comparada com imagens recentes do agente
+                soviético.
+            </p>
+
+            <p>
+                A análise facial apresentou uma correspondência superior a
+                99%.
+            </p>
+
+            <p>
+                A possibilidade de que ambos os registros pertençam ao mesmo
+                indivíduo permanece sob investigação.
+            </p>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="section-title">
+                HIPÓTESE DA S.H.I.E.L.D.
+            </div>
+
+            <p>
+                A hipótese atualmente considerada mais provável é que o soldado
+                declarado morto em 1945 tenha sobrevivido à queda.
+            </p>
+
+            <p>
+                Posteriormente, teria sido capturado por agentes soviéticos e
+                submetido a procedimentos experimentais.
+            </p>
+
+            <p>
+                O processo pode ter resultado em alterações físicas permanentes
+                e na utilização do indivíduo como agente de operações secretas.
+            </p>
+
+            <p>
+                A extensão do condicionamento psicológico permanece desconhecida.
+            </p>
+
+        </section>
+
+
+        <div class="warning">
+
+            NOTA DO SISTEMA:
+            A identificação do indivíduo soviético ainda não foi oficialmente
+            confirmada. Todos os registros relacionados ao programa de
+            super-soldados foram transferidos para uma seção de acesso especial.
+            A recuperação desses arquivos requer autorização de nível superior.
+
+        </div>
+
+
+        <div class="final">
+
+            <p>
+                O indivíduo era conhecido pelo codinome:
+            </p>
+
+            <div class="blank">
+                ███████████████
+            </div>
+
+        </div>
+
+
+        <div class="footer">
+            S.H.I.E.L.D. // INTELLIGENCE ARCHIVE // B-1945 // FIM DO DOCUMENTO
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
