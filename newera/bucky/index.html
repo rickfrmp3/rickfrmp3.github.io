@@ -1,12 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="../favicon.png">
-    
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon.png">
+    <link rel="shortcut icon" type="image/png" href="../favicon.png">
+
     <title>S.H.I.E.L.D. — Recuperação Concluída!</title>
 
     <style>
@@ -74,7 +74,6 @@
             color: #c3cbd0;
             font-size: 30px;
             font-weight: bold;
-            letter-spacing: -3px;
         }
 
         h1 {
@@ -105,13 +104,17 @@
 
         .success {
             margin: 35px 0;
-            padding: 18px;
+            padding: 20px;
             border: 1px solid #394249;
             background: #0b0f12;
             color: #aeb7bc;
             font-size: 12px;
             letter-spacing: 1px;
             line-height: 1.8;
+        }
+
+        .highlight {
+            color: #d1d7da;
         }
 
         .instruction {
@@ -135,8 +138,8 @@
             line-height: 1.8;
         }
 
-        .highlight {
-            color: #d1d7da;
+        .instruction p + p {
+            margin-top: 15px;
         }
 
         .warning {
@@ -175,97 +178,105 @@
 
 <body>
 
-<div class="terminal">
+    <div class="terminal">
 
-    <div class="topbar">
-        <span>S.H.I.E.L.D. // CENTRAL ARCHIVE</span>
-        <span class="status">● SYSTEM RESTORED</span>
+        <div class="topbar">
+            <span>S.H.I.E.L.D. // CENTRAL ARCHIVE</span>
+            <span class="status">● SYSTEM RESTORED</span>
+        </div>
+
+        <main class="content">
+
+            <div class="classification">
+                OPERAÇÃO CONCLUÍDA // ACESSO VALIDADO
+            </div>
+
+            <div class="symbol">
+                S
+            </div>
+
+            <h1>RECUPERAÇÃO CONCLUÍDA</h1>
+
+            <div class="subtitle">
+                S.H.I.E.L.D. CENTRAL INTELLIGENCE DATABASE
+            </div>
+
+            <div class="message">
+
+                <p>
+                    Parabéns, agente.
+                </p>
+
+                <p>
+                    Os arquivos danificados da S.H.I.E.L.D. foram recuperados
+                    com sucesso.
+                </p>
+
+                <p>
+                    As informações identificadas durante a operação foram
+                    restauradas e reintegradas ao banco de dados central.
+                </p>
+
+                <div class="success">
+
+                    STATUS DA OPERAÇÃO:<br>
+                    <span class="highlight">RECUPERAÇÃO CONCLUÍDA</span>
+
+                    <br><br>
+
+                    ARQUIVOS RECUPERADOS:
+                    <span class="highlight">CONFIRMADO</span>
+
+                    <br>
+
+                    INTEGRIDADE DOS DADOS:
+                    <span class="highlight">ACEITÁVEL</span>
+
+                    <br>
+
+                    IDENTIDADE DO AGENTE:
+                    <span class="highlight">VERIFICADA</span>
+
+                </div>
+
+            </div>
+
+            <div class="instruction">
+
+                <div class="instruction-title">
+                    REGISTRO DE CONCLUSÃO
+                </div>
+
+                <p>
+                    Para registrar oficialmente sua participação na operação,
+                    <span class="highlight">tire um print desta tela</span>
+                    e envie a imagem para um administrador responsável pelo evento.
+                </p>
+
+                <p>
+                    O registro será utilizado para confirmar que você concluiu
+                    todas as etapas da recuperação dos arquivos.
+                </p>
+
+            </div>
+
+            <div class="warning">
+
+                NOTA DO SISTEMA:<br>
+
+                O acesso aos arquivos recuperados permanece restrito.
+                Não compartilhe informações obtidas durante a operação fora dos
+                canais autorizados pela S.H.I.E.L.D.
+
+            </div>
+
+            <div class="footer">
+                S.H.I.E.L.D. // CENTRAL ARCHIVE // OPERATION COMPLETE
+            </div>
+
+        </main>
+
     </div>
-
-    <main class="content">
-
-        <div class="classification">
-            OPERAÇÃO CONCLUÍDA // ACESSO VALIDADO
-        </div>
-
-        <div class="symbol">
-            S
-        </div>
-
-        <h1>RECUPERAÇÃO CONCLUÍDA</h1>
-
-        <div class="subtitle">
-            S.H.I.E.L.D. CENTRAL INTELLIGENCE DATABASE
-        </div>
-
-
-        <div class="message">
-
-            <p>
-                Parabéns, agente.
-            </p>
-
-            <p>
-                Os arquivos danificados da S.H.I.E.L.D. foram recuperados
-                com sucesso.
-            </p>
-
-            <p>
-                As informações identificadas durante a operação foram
-                restauradas e reintegradas ao banco de dados central.
-            </p>
-
-            <div class="success">
-
-                STATUS DA OPERAÇÃO:<br>
-                <span class="highlight">RECUPERAÇÃO CONCLUÍDA</span><br><br>
-
-                ARQUIVOS RECUPERADOS: <span class="highlight">CONFIRMADO</span><br>
-                INTEGRIDADE DOS DADOS: <span class="highlight">ACEITÁVEL</span><br>
-                IDENTIDADE DO AGENTE: <span class="highlight">VERIFICADA</span>
-
-            </div>
-
-        </div>
-
-
-        <div class="instruction">
-
-            <div class="instruction-title">
-                REGISTRO DE CONCLUSÃO
-            </div>
-
-            <p>
-                Para registrar oficialmente sua participação na operação,
-                <span class="highlight">tire um print desta tela</span> e
-                envie a imagem para um administrador responsável pelo evento.
-            </p>
-
-            <p style="margin-top: 15px;">
-                O registro será utilizado para confirmar que você concluiu
-                todas as etapas da recuperação dos arquivos.
-            </p>
-
-        </div>
-
-
-        <div class="warning">
-
-            NOTA DO SISTEMA:
-            O acesso aos arquivos recuperados permanece restrito.
-            Não compartilhe informações obtidas durante a operação fora dos
-            canais autorizados pela S.H.I.E.L.D.
-
-        </div>
-
-
-        <div class="footer">
-            S.H.I.E.L.D. // CENTRAL ARCHIVE // OPERATION COMPLETE
-        </div>
-
-    </main>
-
-</div>
 
 </body>
 </html>
