@@ -1,0 +1,272 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <title>S.H.I.E.L.D. — Recuperação Concluída</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at 50% 0%, rgba(35, 45, 55, 0.45), transparent 45%),
+                #080b0e;
+            color: #b8c0c5;
+            font-family: "Courier New", Courier, monospace;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .terminal {
+            width: min(900px, 100%);
+            border: 1px solid #303940;
+            background: rgba(9, 12, 15, 0.96);
+            box-shadow: 0 0 35px rgba(0, 0, 0, 0.7);
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 18px;
+            border-bottom: 1px solid #303940;
+            background: #0d1115;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #69757d;
+        }
+
+        .status {
+            color: #9da7ad;
+        }
+
+        .content {
+            padding: 55px clamp(22px, 7vw, 75px) 60px;
+            text-align: center;
+        }
+
+        .classification {
+            color: #6f7a81;
+            font-size: 11px;
+            letter-spacing: 3px;
+            margin-bottom: 35px;
+        }
+
+        .symbol {
+            width: 82px;
+            height: 82px;
+            margin: 0 auto 30px;
+            border: 1px solid #59636a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #c3cbd0;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: -3px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(24px, 4vw, 38px);
+            font-weight: normal;
+            letter-spacing: 5px;
+            color: #d1d7da;
+        }
+
+        .subtitle {
+            margin: 12px 0 45px;
+            color: #68737a;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .message {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .message p {
+            margin: 0 0 18px;
+            line-height: 1.9;
+            font-size: 14px;
+        }
+
+        .success {
+            margin: 35px 0;
+            padding: 18px;
+            border: 1px solid #394249;
+            background: #0b0f12;
+            color: #aeb7bc;
+            font-size: 12px;
+            letter-spacing: 1px;
+            line-height: 1.8;
+        }
+
+        .instruction {
+            margin-top: 42px;
+            padding: 24px;
+            border: 1px solid #293138;
+            background: rgba(255,255,255,0.02);
+        }
+
+        .instruction-title {
+            color: #c3cbd0;
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-bottom: 17px;
+        }
+
+        .instruction p {
+            margin: 0;
+            color: #8d979d;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            color: #d1d7da;
+        }
+
+        .warning {
+            margin-top: 35px;
+            padding: 15px 18px;
+            border-left: 2px solid #6b7074;
+            background: rgba(255,255,255,0.025);
+            color: #747f85;
+            font-size: 11px;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        .footer {
+            margin-top: 45px;
+            color: #454f55;
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            .content {
+                padding: 40px 20px 45px;
+            }
+
+            .message p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="terminal">
+
+    <div class="topbar">
+        <span>S.H.I.E.L.D. // CENTRAL ARCHIVE</span>
+        <span class="status">● SYSTEM RESTORED</span>
+    </div>
+
+    <main class="content">
+
+        <div class="classification">
+            OPERAÇÃO CONCLUÍDA // ACESSO VALIDADO
+        </div>
+
+        <div class="symbol">
+            S
+        </div>
+
+        <h1>RECUPERAÇÃO CONCLUÍDA</h1>
+
+        <div class="subtitle">
+            S.H.I.E.L.D. CENTRAL INTELLIGENCE DATABASE
+        </div>
+
+
+        <div class="message">
+
+            <p>
+                Parabéns, agente.
+            </p>
+
+            <p>
+                Os arquivos danificados da S.H.I.E.L.D. foram recuperados
+                com sucesso.
+            </p>
+
+            <p>
+                As informações identificadas durante a operação foram
+                restauradas e reintegradas ao banco de dados central.
+            </p>
+
+            <div class="success">
+
+                STATUS DA OPERAÇÃO:<br>
+                <span class="highlight">RECUPERAÇÃO CONCLUÍDA</span><br><br>
+
+                ARQUIVOS RECUPERADOS: <span class="highlight">CONFIRMADO</span><br>
+                INTEGRIDADE DOS DADOS: <span class="highlight">ACEITÁVEL</span><br>
+                IDENTIDADE DO AGENTE: <span class="highlight">VERIFICADA</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="instruction">
+
+            <div class="instruction-title">
+                REGISTRO DE CONCLUSÃO
+            </div>
+
+            <p>
+                Para registrar oficialmente sua participação na operação,
+                <span class="highlight">tire um print desta tela</span> e
+                envie a imagem para um administrador responsável pelo evento.
+            </p>
+
+            <p style="margin-top: 15px;">
+                O registro será utilizado para confirmar que você concluiu
+                todas as etapas da recuperação dos arquivos.
+            </p>
+
+        </div>
+
+
+        <div class="warning">
+
+            NOTA DO SISTEMA:
+            O acesso aos arquivos recuperados permanece restrito.
+            Não compartilhe informações obtidas durante a operação fora dos
+            canais autorizados pela S.H.I.E.L.D.
+
+        </div>
+
+
+        <div class="footer">
+            S.H.I.E.L.D. // CENTRAL ARCHIVE // OPERATION COMPLETE
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
+```
